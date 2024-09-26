@@ -1,3 +1,6 @@
+# The Most Detailed Project Summary:
+http://youngyoon.me/archives/2843
+
 # [GG] Week 1
 
 - Document AI - PDF 문서 등을 GPT에 업로드하면 테이블, 이미지, 차트를 잘 인지하지 못하는 경우가 있음. 그때 도큐먼트를 제대로 인식해서 OCR 등 불러오는 걸 제대로 해 주는 모델

@@ -9,7 +9,6 @@ import tempfile
 from langchain_upstage import UpstageEmbeddings
 from langchain_chroma import Chroma
 from langchain_community.document_loaders import PyPDFLoader
-from pyspark.sql import SparkSession
 
 if "id" not in st.session_state:
     st.session_state.id = uuid.uuid4()
@@ -21,12 +20,6 @@ client = None
 def reset_chat():
     st.session_state.messages = []
     st.session_state.context = None
-
-## Spark Session 추가
-def create_spark_session(app_name="ChatbotApp"):
-    spark = SparkSession.builder.appName(app_name).getOrCreate()
-    return spark
-## Spark Session 추가
 
 def display_pdf(file):
     ## Opening file from file path
